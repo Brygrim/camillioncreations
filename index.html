@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camille Grimshaw — Artist & Educator</title>
+    <meta name="description" content="Watercolor, chalk art, and ceramics. Based in South Jordan, Utah. Available for commissions, private lessons, and festival collaborations.">
+    <meta name="keywords" content="Camille Grimshaw, artist, watercolor, chalk art, ceramics, Utah, South Jordan, art teacher, commissions">
+    <meta name="author" content="Camille Grimshaw">
+    
+    <!-- Open Graph / Social Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://camillegrimshaw.github.io/">
+    <meta property="og:title" content="Camille Grimshaw — Artist & Educator">
+    <meta property="og:description" content="Watercolor, chalk art, and ceramics. Based in South Jordan, Utah.">
+    <meta property="og:image" content="https://camillegrimshaw.github.io/images/portrait/Camille_0071(1).jpg">
+    <meta property="og:site_name" content="Camille Grimshaw">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Camille Grimshaw — Artist & Educator">
+    <meta name="twitter:description" content="Watercolor, chalk art, and ceramics. Based in South Jordan, Utah.">
+    <meta name="twitter:image" content="https://camillegrimshaw.github.io/images/portrait/Camille_0071(1).jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <span class="loading-logo">CG.</span>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+    
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#" class="nav-logo">CG.</a>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <div class="nav-links" id="nav-links">
+            <a href="#bio" class="nav-link">
+                <span class="link-num">01</span>
+                <span class="link-text">Bio</span>
+            </a>
+            <a href="#resume" class="nav-link">
+                <span class="link-num">02</span>
+                <span class="link-text">Resume</span>
+            </a>
+            <a href="#artwork" class="nav-link">
+                <span class="link-num">03</span>
+                <span class="link-text">Artwork</span>
+            </a>
+            <a href="#awards" class="nav-link">
+                <span class="link-num">04</span>
+                <span class="link-text">Awards</span>
+            </a>
+            <a href="#community" class="nav-link">
+                <span class="link-num">05</span>
+                <span class="link-text">Community</span>
+            </a>
+            <a href="#press" class="nav-link">
+                <span class="link-num">06</span>
+                <span class="link-text">Press</span>
+            </a>
+            <a href="#contact" class="nav-link">
+                <span class="link-num">07</span>
+                <span class="link-text">Contact</span>
+            </a>
+        </div>
+        
+        <!-- Mobile Menu Backdrop -->
+        <div class="mobile-menu-backdrop" id="mobile-menu-backdrop"></div>
+        
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+            <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">
+                <span class="close-line"></span>
+                <span class="close-line"></span>
+            </button>
+            <div class="mobile-menu-content">
+                <a href="#bio" class="mobile-nav-link" data-section="01">Bio</a>
+                <a href="#resume" class="mobile-nav-link" data-section="02">Resume</a>
+                <a href="#artwork" class="mobile-nav-link" data-section="03">Artwork</a>
+                <a href="#awards" class="mobile-nav-link" data-section="04">Awards</a>
+                <a href="#community" class="mobile-nav-link" data-section="05">Community</a>
+                <a href="#press" class="mobile-nav-link" data-section="06">Press</a>
+                <a href="#contact" class="mobile-nav-link" data-section="07">Contact</a>
+            </div>
+            <div class="mobile-menu-footer">
+                <span class="menu-footer-text">Camille Grimshaw</span>
+                <span class="menu-footer-accent">Artist & Educator</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Landing Hero -->
+    <header class="landing-hero">
+        <div class="landing-bg">
+            <div class="landing-slideshow">
+                <img src="images/collage/collage-1.jpg" alt="" class="slideshow-img active">
+                <img src="images/collage/collage-2.jpg" alt="" class="slideshow-img">
+                <img src="images/collage/collage-3.jpg" alt="" class="slideshow-img">
+                <img src="images/collage/collage-4.jpg" alt="" class="slideshow-img">
+            </div>
+            <div class="landing-overlay"></div>
+        </div>
+        <div class="landing-content">
+            <h1 class="landing-title">
+                <span class="landing-name">Camille Grimshaw</span>
+                <span class="landing-tagline">Artist & Educator</span>
+            </h1>
+            <a href="#artwork" class="landing-cta">View Portfolio</a>
+        </div>
+    </header>
+
+    <!-- Bio Section -->
+    <section id="bio" class="artist-section">
+        <div class="section-header" data-reveal data-section="01">
+            <span class="section-num">01</span>
+            <h2 class="section-title">Bio</h2>
+        </div>
+        
+        <div class="artist-content">
+            <div class="artist-portrait" data-reveal>
+                <div class="portrait-gallery">
+                    <div class="portrait-frame">
+                        <img src="images/portrait/Camille_0071(1).jpg" alt="Camille Grimshaw portrait 1" class="portrait-img">
+                    </div>
+                    <div class="portrait-frame">
+                        <img src="images/portrait/Camille_0077(1).jpg" alt="Camille Grimshaw portrait 2" class="portrait-img">
+                    </div>
+                </div>
+                <div class="portrait-caption">
+                    <span class="caption-name">Camille Grimshaw</span>
+                    <span class="caption-title">Artist & Educator</span>
+                </div>
+            </div>
+            
+            <div class="artist-details" data-reveal>
+                <div class="artist-bio">
+                    <p class="text-large">Born in Salt Lake City. Been drawing as long as I can remember.</p>
+                    <p>B.A. in Art & Education from Westminster College, 2003. M.Ed., 2005. Started selling watercolors to pay for grad school — now my art hangs everywhere from nurseries to a bomb shelter in Israel.</p>
+                    <p class="text-large">Taught middle school for five years. Now creating from home, teaching private lessons, and doing chalk art festivals.</p>
+                    <p>Running toward 100 half marathons. Based in South Jordan with my husband Bryan and our four children.</p>
+                </div>
+                
+                <div class="artist-facts">
+                    <div class="fact">
+                        <span class="fact-icon">📍</span>
+                        <span class="fact-text">South Jordan, Utah</span>
+                    </div>
+                    <div class="fact">
+                        <span class="fact-icon">🎓</span>
+                        <span class="fact-text">Westminster College B.A. & M.Ed.</span>
+                    </div>
+                    <div class="fact">
+                        <span class="fact-icon">🏃</span>
+                        <span class="fact-text">100 Half Marathons Goal</span>
+                    </div>
+                    <div class="fact">
+                        <span class="fact-icon">👨‍👩‍👧‍👦</span>
+                        <span class="fact-text">Mom of Four</span>
+                    </div>
+                </div>
+                
+                <div class="about-quote-large" style="margin-top: 40px; padding-top: 30px; border-top: 1px solid var(--border);">
+                    <blockquote>"I love creating art and I love it even more when others enjoy it too."</blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="about-section">
+        <div class="about-content-wide" data-reveal>
+            <div class="section-header" data-section="02">
+                <span class="section-num">02</span>
+                <h2 class="section-title">Resume</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-reveal>
+                    <span class="timeline-year">2003</span>
+                    <div class="timeline-content">
+                        <h4>B.A. in Art & Education</h4>
+                        <p>Westminster College</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-reveal>
+                    <span class="timeline-year">2005</span>
+                    <div class="timeline-content">
+                        <h4>M.Ed.</h4>
+                        <p>Westminster College</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-reveal>
+                    <span class="timeline-year">2008-2013</span>
+                    <div class="timeline-content">
+                        <h4>Middle School Art Teacher</h4>
+                        <p>[School District Name - TBD]</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-reveal>
+                    <span class="timeline-year">2010-Present</span>
+                    <div class="timeline-content">
+                        <h4>Freelance Artist & Educator</h4>
+                        <p>Private lessons, commissions, chalk art festivals</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resume-note" data-reveal style="margin-top: 60px; padding-top: 30px; border-top: 1px solid var(--border);">
+                <p class="text-large">Exhibitions & Festivals</p>
+                <p>[List exhibitions, festivals, and notable events - placeholder]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artwork Section -->
+    <section id="artwork" class="works">
+        <div class="section-header" data-reveal data-section="03">
+            <span class="section-num">03</span>
+            <h2 class="section-title">Artwork</h2>
+            <p class="section-note">Watercolor, chalk art, and ceramics</p>
+        </div>
+        
+        <!-- Gallery Filter -->
+        <div class="gallery-filters" data-reveal>
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="watercolor">Watercolor</button>
+            <button class="filter-btn" data-filter="chalk">Chalk Art</button>
+            <button class="filter-btn" data-filter="ceramics">Ceramics</button>
+        </div>
+
+        <!-- Watercolor -->
+        <div class="work-block" data-reveal data-category="watercolor">
+            <div class="work-header">
+                <div class="work-info">
+                    <span class="work-cat">Watercolor</span>
+                    <h3 class="work-title">Fluid & Translucent</h3>
+                    <p class="work-desc">Paintings stacked up during grad school, now shipped worldwide.</p>
+                </div>
+                <div class="scroll-hint">
+                    <span>Scroll</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </div>
+            </div>
+            <div class="gallery-scroll">
+                <div class="gallery-track">
+                    <div class="gallery-item">
+                        <div class="image-placeholder wide"><span>Watercolor 1</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-placeholder tall"><span>Watercolor 2</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-placeholder wide"><span>Watercolor 3</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-placeholder square"><span>Watercolor 4</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-placeholder wide"><span>Watercolor 5</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-placeholder tall"><span>Watercolor 6</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-nav">
+                <button class="gallery-btn prev" aria-label="Previous"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                <button class="gallery-btn next" aria-label="Next"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+            </div>
+        </div>
+
+        <!-- Chalk Art -->
+        <div class="work-block work-block-alt" data-reveal data-category="chalk">
+            <div class="work-header">
+                <div class="work-info">
+                    <span class="work-cat">Chalk Art</span>
+                    <h3 class="work-title">Street & Festival</h3>
+                    <p class="work-desc">Large-scale temporary works. From 3D illusions to festival murals.</p>
+                </div>
+                <div class="scroll-hint">
+                    <span>Scroll</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </div>
+            </div>
+            <div class="gallery-scroll">
+                <div class="gallery-track">
+                    <div class="gallery-item">
+                        <img src="images/chalk/0098b1d4-3a62-453f-a364-b0486c83703c-screen_shot_.jpeg" alt="Chalk art" class="gallery-img wide">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chalk/105b5a58-7e4a-4be4-83b4-b34313640747-83445400_359.jpeg" alt="Chalk art" class="gallery-img tall">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chalk/23ed503c-2e11-485f-9af6-4f62f496bdee-screen_shot_.jpeg" alt="Chalk art" class="gallery-img wide">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chalk/46f1318b-3ddd-411f-a9ba-5c03c12e0c02-376820255_70.jpeg" alt="Chalk art" class="gallery-img square">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chalk/571adabe-a2fe-46ef-94cb-f9ecf092e490-351557706_59.jpeg" alt="Chalk art" class="gallery-img wide">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chalk/67cf1812-b853-412e-a74c-0f61463616ae-screen_shot_.jpeg" alt="Chalk art" class="gallery-img tall">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chalk/6af76084-2595-4f4f-896d-334fcc3fd2b8-396509996_73.jpeg" alt="Chalk art" class="gallery-img wide">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chalk/6d424181-b6ae-4c5a-89a4-fc6f52d91bcc-screen_shot_.jpeg" alt="Chalk art" class="gallery-img square">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chalk/71431953-5201-41bc-b277-b37313a344d3-311316975_47.jpeg" alt="Chalk art" class="gallery-img tall">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chalk/8587b3aa-c701-4e0d-a5e0-9d03f69b0910-screen_shot_.jpeg" alt="Chalk art" class="gallery-img wide">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chalk/8f037f8f-01e7-461e-bfeb-fc79fc2be142-screen_shot_.jpeg" alt="Chalk art" class="gallery-img square">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chalk/93cc4124-d6cd-4c37-9ccc-f07cb7e1e933-screen_shot_.jpeg" alt="Chalk art" class="gallery-img tall">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chalk/a92a765a-f8ca-4c46-a1c0-1512c8d46d77-379978808_70.jpeg" alt="Chalk art" class="gallery-img wide">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chalk/f5ef1b1f-e375-462e-9af5-2e0ddd44a7e5-342176115_54.jpeg" alt="Chalk art" class="gallery-img square">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-nav">
+                <button class="gallery-btn prev" aria-label="Previous"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                <button class="gallery-btn next" aria-label="Next"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+            </div>
+        </div>
+
+        <!-- Ceramics -->
+        <div class="work-block" data-reveal data-category="ceramics">
+            <div class="work-header">
+                <div class="work-info">
+                    <span class="work-cat">Ceramics</span>
+                    <h3 class="work-title">Hand Built</h3>
+                    <p class="work-desc">Wheel-thrown and hand-built forms in stoneware and clay.</p>
+                </div>
+                <div class="scroll-hint">
+                    <span>Scroll</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </div>
+            </div>
+            <div class="gallery-scroll">
+                <div class="gallery-track">
+                    <div class="gallery-item">
+                        <div class="image-placeholder square"><span>Ceramic 1</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-placeholder tall"><span>Ceramic 2</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-placeholder wide"><span>Ceramic 3</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-placeholder square"><span>Ceramic 4</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-placeholder tall"><span>Ceramic 5</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-placeholder square"><span>Ceramic 6</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-nav">
+                <button class="gallery-btn prev" aria-label="Previous"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                <button class="gallery-btn next" aria-label="Next"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="works">
+        <div class="section-header" data-reveal data-section="04">
+            <span class="section-num">04</span>
+            <h2 class="section-title">Awards & Recognitions</h2>
+        </div>
+        
+        <div class="awards-list">
+            <div class="award-item" data-reveal>
+                <span class="award-year">20XX</span>
+                <h4>[Award Name - Placeholder]</h4>
+                <p>[Description or event - Placeholder]</p>
+            </div>
+            <div class="award-item" data-reveal>
+                <span class="award-year">20XX</span>
+                <h4>[Award Name - Placeholder]</h4>
+                <p>[Description or event - Placeholder]</p>
+            </div>
+            <div class="award-item" data-reveal>
+                <span class="award-year">20XX</span>
+                <h4>[Award Name - Placeholder]</h4>
+                <p>[Description or event - Placeholder]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Service Section -->
+    <section id="community" class="about-section">
+        <div class="about-content-wide" data-reveal>
+            <div class="section-header" data-section="05">
+                <span class="section-num">05</span>
+                <h2 class="section-title">Community Service</h2>
+            </div>
+            
+            <div class="community-list">
+                <div class="community-item" data-reveal>
+                    <span class="community-icon">🎨</span>
+                    <h4>Chalk Art Festivals</h4>
+                    <p>Volunteer street painting for local events and community celebrations.</p>
+                </div>
+                <div class="community-item" data-reveal>
+                    <span class="community-icon">📚</span>
+                    <h4>Art Workshops</h4>
+                    <p>Teaching watercolor and chalk techniques to students of all ages.</p>
+                </div>
+                <div class="community-item" data-reveal>
+                    <span class="community-icon">🎁</span>
+                    <h4>Donated Artwork</h4>
+                    <p>Pieces contributed to fundraisers, schools, and community organizations.</p>
+                </div>
+                <div class="community-item" data-reveal>
+                    <span class="community-icon">🏃</span>
+                    <h4>Running for Causes</h4>
+                    <p>100 half marathon journey supporting various charities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Press & Testimonials Section -->
+    <section id="press" class="works">
+        <div class="section-header" data-reveal data-section="06">
+            <span class="section-num">06</span>
+            <h2 class="section-title">Press & Testimonials</h2>
+        </div>
+        
+        <div class="press-grid">
+            <div class="press-column" data-reveal>
+                <h3 class="press-subtitle">In the News</h3>
+                <div class="press-item">
+                    <span class="press-date">[Date]</span>
+                    <h4>[Article Title - Placeholder]</h4>
+                    <p>[Publication Name]</p>
+                    <a href="#" class="press-link">Read Article →</a>
+                </div>
+                <div class="press-item">
+                    <span class="press-date">[Date]</span>
+                    <h4>[Article Title - Placeholder]</h4>
+                    <p>[Publication Name]</p>
+                    <a href="#" class="press-link">Read Article →</a>
+                </div>
+            </div>
+            
+            <div class="press-column" data-reveal>
+                <h3 class="press-subtitle">What People Say</h3>
+                <div class="testimonial-item">
+                    <blockquote>"Camille's watercolor brought so much warmth to our nursery. Truly one of a kind."</blockquote>
+                    <cite>— [Client Name, Location]</cite>
+                </div>
+                <div class="testimonial-item">
+                    <blockquote>"Her chalk art festival piece was the highlight of our event. Incredible talent!"</blockquote>
+                    <cite>— [Event Organizer]</cite>
+                </div>
+                <div class="testimonial-item">
+                    <blockquote>"My daughter learned so much in just one lesson. Camille is a gifted teacher."</blockquote>
+                    <cite>— [Parent Name]</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="stat-item" data-reveal>
+            <span class="stat-number" data-count="20">0</span>
+            <span class="stat-suffix">+</span>
+            <span class="stat-label">Years Creating</span>
+        </div>
+        <div class="stat-item" data-reveal>
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Creative Passion</span>
+        </div>
+        <div class="stat-item" data-reveal>
+            <span class="stat-number" data-count="100">0</span>
+            <span class="stat-label">Half Marathons Goal</span>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="section-header" data-reveal data-section="07">
+            <span class="section-num">07</span>
+            <h2 class="section-title">Contact</h2>
+        </div>
+        
+        <div class="contact-content" data-reveal>
+            <p class="contact-lead">Available for commissions, private lessons, and festival collaborations.</p>
+            
+            <div class="contact-links">
+                <a href="#" class="contact-link">
+                    <span class="link-label">Location</span>
+                    <span class="link-value">South Jordan, Utah</span>
+                </a>
+                <a href="#" class="contact-link">
+                    <span class="link-label">Services</span>
+                    <span class="link-value">Commissions • Lessons • Festivals</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="social-links" data-reveal>
+            <p class="social-label">Follow my work</p>
+            <div class="social-icons">
+                <a href="https://instagram.com/camillegrimshaw" target="_blank" rel="noopener" class="social-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://facebook.com/camillegrimshaw" target="_blank" rel="noopener" class="social-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                    <span>Facebook</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <span class="footer-year">© 2026</span>
+            <span class="footer-name">Camille Grimshaw</span>
+            <span class="footer-location">South Jordan, Utah</span>
+        </div>
+        <div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+            <span>Back to top</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-overlay"></div>
+        <button class="lightbox-close" aria-label="Close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <img class="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Reveal on scroll
+        const revealElements = document.querySelectorAll('[data-reveal]');
+        
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Counter animation
+        const counters = document.querySelectorAll('[data-count]');
+        
+        const countObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = parseInt(entry.target.getAttribute('data-count'));
+                    const duration = 2000;
+                    const step = target / (duration / 16);
+                    let current = 0;
+                    
+                    const timer = setInterval(() => {
+                        current += step;
+                        if (current >= target) {
+                            entry.target.textContent = target;
+                            clearInterval(timer);
+                        } else {
+                            entry.target.textContent = Math.floor(current);
+                        }
+                    }, 16);
+                    
+                    countObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        counters.forEach(counter => countObserver.observe(counter));
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Nav background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('nav-scrolled');
+            } else {
+                nav.classList.remove('nav-scrolled');
+            }
+        });
+
+        // Horizontal scroll with mouse wheel for galleries
+        document.querySelectorAll('.gallery-scroll').forEach(gallery => {
+            gallery.addEventListener('wheel', (e) => {
+                if (e.deltaY !== 0) {
+                    e.preventDefault();
+                    gallery.scrollLeft += e.deltaY;
+                }
+            });
+        });
+
+        // Lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.querySelector('.lightbox-img');
+        const lightboxClose = document.querySelector('.lightbox-close');
+        const lightboxOverlay = document.querySelector('.lightbox-overlay');
+        
+        // Open lightbox when clicking gallery or portrait images
+        document.querySelectorAll('.gallery-img, .portrait-img').forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        // Close lightbox
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                lightboxImg.src = '';
+            }, 300);
+        }
+        
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightboxOverlay.addEventListener('click', closeLightbox);
+        
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                closeLightbox();
+            }
+        });
+
+        // ===== Custom Cursor =====
+        const cursor = document.querySelector('.custom-cursor');
+        
+        if (cursor && window.matchMedia('(pointer: fine)').matches) {
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+            });
+            
+            document.querySelectorAll('.gallery-item, .gallery-img, .portrait-img').forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursor.classList.add('view-mode');
+                    cursor.classList.add('expanded');
+                });
+                el.addEventListener('mouseleave', () => {
+                    cursor.classList.remove('view-mode');
+                    cursor.classList.remove('expanded');
+                });
+            });
+            
+            document.querySelectorAll('a, button, .nav-link, .scroll-top, .social-link').forEach(link => {
+                link.addEventListener('mouseenter', () => {
+                    cursor.classList.add('link-mode');
+                });
+                link.addEventListener('mouseleave', () => {
+                    cursor.classList.remove('link-mode');
+                });
+            });
+        }
+
+        // ===== Word Split Reveal Animation =====
+        function splitTextIntoWords(element) {
+            const text = element.textContent;
+            element.innerHTML = text.split(' ').map(word => 
+                `<span class="split-word">${word}</span>`
+            ).join(' ');
+        }
+        
+        const heroSubtitle = document.querySelector('.hero-subtitle');
+        if (heroSubtitle) splitTextIntoWords(heroSubtitle);
+        
+        document.querySelectorAll('.text-large, .work-desc').forEach(el => {
+            if (!el.closest('[data-split="false"]')) {
+                splitTextIntoWords(el);
+            }
+        });
+        
+        const wordObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const words = entry.target.querySelectorAll('.split-word');
+                    words.forEach((word, index) => {
+                        setTimeout(() => {
+                            word.classList.add('revealed');
+                        }, index * 60);
+                    });
+                    wordObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3, rootMargin: '0px 0px -50px 0px' });
+        
+        document.querySelectorAll('.hero-subtitle, .text-large, .work-desc').forEach(el => {
+            wordObserver.observe(el);
+        });
+
+        // ===== Gallery Navigation Buttons =====
+        document.querySelectorAll('.work-block').forEach(block => {
+            const gallery = block.querySelector('.gallery-scroll');
+            const prevBtn = block.querySelector('.gallery-btn.prev');
+            const nextBtn = block.querySelector('.gallery-btn.next');
+            
+            if (!gallery || !prevBtn || !nextBtn) return;
+            
+            const scrollAmount = 400;
+            
+            prevBtn.addEventListener('click', () => {
+                gallery.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            });
+            
+            nextBtn.addEventListener('click', () => {
+                gallery.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            });
+        });
+
+        // ===== Loading Screen =====
+        window.addEventListener('load', () => {
+            const loadingScreen = document.getElementById('loading-screen');
+            if (loadingScreen) {
+                loadingScreen.classList.add('hidden');
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }
+        });
+
+        // ===== Scroll Progress Bar =====
+        const scrollProgress = document.getElementById('scroll-progress');
+        if (scrollProgress) {
+            window.addEventListener('scroll', () => {
+                const scrollTop = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const scrollPercent = (scrollTop / docHeight) * 100;
+                scrollProgress.style.width = scrollPercent + '%';
+            });
+        }
+
+        // ===== Mobile Menu =====
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileMenuBackdrop = document.getElementById('mobile-menu-backdrop');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        if (mobileMenuToggle && mobileMenuOverlay) {
+            function openMenu() {
+                mobileMenuToggle.classList.add('active');
+                mobileMenuOverlay.classList.add('active');
+                if (mobileMenuBackdrop) mobileMenuBackdrop.classList.add('active');
+                document.body.classList.add('menu-open');
+            }
+
+            function closeMenu() {
+                mobileMenuToggle.classList.remove('active');
+                mobileMenuOverlay.classList.remove('active');
+                if (mobileMenuBackdrop) mobileMenuBackdrop.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            }
+
+            mobileMenuToggle.addEventListener('click', () => {
+                if (mobileMenuOverlay.classList.contains('active')) {
+                    closeMenu();
+                } else {
+                    openMenu();
+                }
+            });
+
+            if (mobileMenuClose) {
+                mobileMenuClose.addEventListener('click', closeMenu);
+            }
+
+            if (mobileMenuBackdrop) {
+                mobileMenuBackdrop.addEventListener('click', closeMenu);
+            }
+
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    closeMenu();
+                });
+            });
+
+            // Close on escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && mobileMenuOverlay.classList.contains('active')) {
+                    closeMenu();
+                }
+            });
+        }
+
+        // ===== Gallery Filters =====
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const workBlocks = document.querySelectorAll('.work-block[data-category]');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.getAttribute('data-filter');
+                
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                // Filter work blocks
+                workBlocks.forEach(block => {
+                    const category = block.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        block.style.display = 'block';
+                        setTimeout(() => {
+                            block.style.opacity = '1';
+                            block.style.transform = 'translateY(0)';
+                        }, 10);
+                    } else {
+                        block.style.opacity = '0';
+                        block.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            block.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>
