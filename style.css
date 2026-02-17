@@ -2788,3 +2788,19 @@ body.menu-open {
         font-size: 0.8rem !important; 
     }
 }
+/* ===== Mobile Bio Section Specific Boost ===== */
+@media (max-width: 768px) {
+    /* Target the intro paragraphs (Text Large) */
+    .text-large {
+        font-size: 1.25rem !important; /* Approx 22px */
+        line-height: 1.5;
+    }
+
+    /* Target the standard paragraphs in the bio */
+    .artist-bio p {
+        font-size: 1.15rem !important; /* Approx 20px */
+        font-weight: 400 !important;   /* Makes text normal weight instead of thin */
+        line-height: 1.7;
+        color: #000;                   /* Pure black for better contrast */
+    }
+}
