@@ -2743,3 +2743,48 @@ body.menu-open {
         right: 15px;
     }
 }
+/* ===== Mobile Text & Resume Fixes ===== */
+@media (max-width: 768px) {
+    /* 1. Increase Base Text Size */
+    html {
+        font-size: 18px; 
+    }
+
+    /* 2. CRITICAL FIX: Force all hidden elements to show immediately on mobile */
+    /* This stops the Resume from being invisible */
+    [data-reveal] {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    /* 3. Fix Resume Layout "Mess" */
+    /* With bigger text, side-by-side years look bad. Stack them. */
+    .resume-list li {
+        display: flex;
+        flex-direction: column; /* Puts text below the year */
+        margin-bottom: 20px;
+        border-left: 2px solid var(--border); /* Adds a nice line guide */
+        padding-left: 15px;
+    }
+    
+    .resume-list li:last-child {
+        margin-bottom: 0;
+    }
+
+    .resume-list .resume-year {
+        margin-bottom: 5px;
+        color: var(--accent);
+        font-weight: 600;
+        font-size: 0.9rem; /* Keep the year slightly smaller/sharper */
+    }
+
+    /* 4. Ensure tiny tags are readable but not huge */
+    .section-num, 
+    .work-cat, 
+    .community-tag, 
+    .press-date, 
+    .link-label {
+        font-size: 0.8rem !important; 
+    }
+}
