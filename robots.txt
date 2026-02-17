@@ -5,7 +5,7 @@ Allow: /
 Disallow: /404.html
 
 # Sitemap location
-Sitemap: https://camillegrimshaw.github.io/sitemap.xml
+Sitemap: https://brygrim.github.io/camillioncreations/sitemap.xml
 
 # Crawl rate (optional - helps manage server load)
 # Crawl-delay: 10
